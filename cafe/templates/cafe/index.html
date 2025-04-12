@@ -1,0 +1,251 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'cafe/css/font.css' %}" />
+  <link rel="stylesheet" href="{% static 'cafe/css/root.css' %}" />
+  <link rel="stylesheet" href="{% static 'cafe/css/style.css' %}" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main__backround">
+    <div class="container">
+        <!--Need to be fixed-->
+      <header class="header"   style="background-color: black">
+        <div class="header__main-div">
+          <div class="header__logo">
+            <img src="{% static 'cafe/img/LOGO.png' %}" alt="" />
+          </div>
+          <div class="header__wrapper">
+            <div class="header__wrapper-items">
+              <a href="{% url 'cafe:home' %}">Главная</a>
+              <a href="{% url 'cafe:menu' %}">меню</a>
+              <a href="#">о нас</a>
+              <a href="#">бронь <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="header__wrapper-items2">
+              <div class="items2__span">
+                <span class="span"><i class="fa-solid fa-phone-volume"></i>911</span><br />
+                <span class="span">Свяжитесь с нами для бронирования</span>
+              </div>
+              <button class="button">Заказ столика</button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="main__h">
+      <div class="main__item-h">
+        <h1 class="main__h1">Добро пожаловать в</h1>
+        <h2 class="main__h2">Наш ресторан</h2>
+        <h3 class="main__h3">Дом лучшей еды</h3>
+        <button class="main__button">view menu</button>
+      </div>
+    </main>
+  </div>
+  <div class="main__block">
+    <div class="main__wrapper1">
+      <div class="main__img">
+        <img src="{% static 'cafe/img/icon/block-logo.png' %}" alt="" />
+      </div>
+      <span>Магическая Атмосфера</span>
+      <p>
+        В нашем заведении царит магическая атмосфера наполненная вкусными
+        ароматами
+      </p>
+    </div>
+
+    <div class="main__wrapper2">
+      <div class="main__img">
+        <img src="{% static 'cafe/img/icon/block-logo.png' %}" alt="" />
+      </div>
+      <span>Лучшее качество Еды</span>
+      <p>Качество нашей Еды - отменное!</p>
+    </div>
+    <div class="main__wrapper3">
+      <div class="main__img">
+        <img src="{% static 'cafe/img/icon/block-logo.png' %}" alt="" />
+      </div>
+      <span>Недорогая Еда</span>
+      <p>
+        Стоимость нашей Еды зависит только от ее количества. Качество всегда
+        на высоте!
+      </p>
+    </div>
+  </div>
+  <div class="history__container">
+    <div class="history">
+      <div class="history__item1">
+        <h1>Наша История</h1>
+        <p>
+          Как и у любого другого самобытного места, у нас есть своя, особая
+          история. Идея ресторана пришла основателям неожиданно. Во время
+          прогулки по лесу создатель нашего ресторана застрял в сотнях
+          километров от ближайшего населенного пункта. Вдали от цивилизации и
+          связи им пришлось навремя обустровать себе нехитрый быт, добывать и
+          готовить себе еду.
+        </p>
+      </div>
+      <div class="history__item2">
+        <div class="history__img">
+          <img src="{% static 'cafe/img/history-images.png' %}" alt="" />
+        </div>
+      </div>
+      <!--  -->
+    </div>
+    <div class="history__footer">
+      <div class="footer__span">
+        <h1>Отпразднуйте в одном из самых лучших ресторанов.</h1>
+        <span>Только в этом месяце бизнес-ланч от 250 ₽</span>
+      </div>
+      <button class="footer__button">Заказ столика</button>
+    </div>
+    <div class="container__menu">
+      <h1>Наши Блюда</h1>
+      <div class="menu__image">
+        <div class="menu__child-img">
+
+          <img src="{% static 'cafe/img/pizza-menu.jpg' %}" alt="" />
+
+        </div>
+        <div class="menu__child">
+          <div class="menu__child1-img">
+            <div class="menu__child-img-img">
+              <img src="{% static 'cafe/img/Mask Group.png' %}" alt="" />
+
+            </div>
+            <span>Гамбургер мини -------------- 220p</span>
+          </div>
+          <!--  -->
+          <div class="menu__child1-img">
+            <div class="menu__child-img-img">
+              <img src="{% static 'cafe/img/Mask Group.png' %}" alt="" />
+            </div>
+            <span>Гамбургер мини -------------- 220p</span>
+          </div>
+          <!--  -->
+          <div class="menu__child1-img">
+            <div class="menu__child-img-img">
+              <img src="{% static 'cafe/img/Mask Group.png' %}" alt="" />
+            </div>
+            <span>Гамбургер мини -------------- 220p</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="card__container">
+      <!--  -->
+      <div class="card__block-1">
+        <div class="card__block-img">
+          <div class="block__img-1">
+            <img src="{% static 'cafe/img/block-burger.jpg' %}" alt="" />
+          </div>
+          <div class="card__block-price">
+            <div class="card__block-child1">
+              <span>420</span>
+            </div>
+          </div>
+        </div>
+        <h2>Гамбургер макси</h2>
+        <p>Максимально толстый <br>слой мяса</p>
+        <button>Заказать</button>
+      </div>
+      <!--  -->
+      <div class="card__block-2">
+        <div class="card__block-img2">
+          <div class="block__img-2">
+            <img src="{% static 'cafe/img/block-burger.jpg' %}" alt="" />
+          </div>
+          <div class="card__block-price2">
+            <div class="card__block-child2">
+              <span>420</span>
+            </div>
+          </div>
+        </div>
+        <h2>Гамбургер макси</h2>
+        <p>Максимально толстый <br>слой мяса</p>
+        <button>Заказать</button>
+      </div>
+      <!--  -->
+      <div class="card__block-3">
+        <div class="card__block-img3">
+          <div class="block__img-3">
+            <img src="{% static 'cafe/img/block-burger.jpg' %}" alt="" />
+          </div>
+          <div class="card__block-price3">
+            <div class="card__block-child3">
+              <span>420</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Гамбургер макси</h2>
+        <p>Максимально толстый <br>слой мяса</p>
+        <button>Заказать</button>
+      </div>
+      <!--  -->
+    </div>
+    <div class="otziv">
+      <span>Я надолго запомню мой День рождения, проведённый в этом ресторане!
+        Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде
+        фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и
+        родственникам также за рубежом, путешествующих в
+        Санкт-Петербург!!!</span>
+      <div class="posetitel__img">
+        <img src="{% static 'cafe/img/icon/posetitel.png' %}" alt="" />
+      </div>
+      <span>Посетитель</span>
+      <p>Николай</p>
+    </div>
+    <!--  -->
+    <div class="galery">
+      <span>Галерея <span class="galery__span">Блюд</span></span>
+      <div class="galery__item">
+        <div class="galery__child1">
+          <img src="{% static 'cafe/img/history-big.png' %}" alt="" />
+        </div>
+        <div class="galery__child2">
+          <img src="{% static 'cafe/img/history1.png' %}" alt="" />
+        </div>
+        <div class="galery__child3">
+          <img src="{% static 'cafe/img/history2.png' %}" alt="" />
+        </div>
+        <div class="galery__child4">
+          <img src="{% static 'cafe/img/history1.png' %}" alt="" />
+        </div>
+        <div class="galery__child5">
+          <img src="{% static 'cafe/img/history2.png' %}" alt="" />
+        </div>
+        <div class="galery__child6">
+          <img src="{% static 'cafe/img/history-big.png' %}" alt="" />
+        </div>
+        <div class="galery__child7"></div>
+        <div class="galery__child8"></div>
+      </div>
+    </div>
+    <div class="povora">
+      <span class="povora__span1">Наши <span class="povora__span">Повара</span></span>
+      <div class="povora-item">
+        <div class="povora__item1"><img src="{% static 'cafe/img/povora.jpg' %}" alt="" /></div>
+        <div class="povora__item2">
+          <img src="{% static 'cafe/img/povora-2.png' %}" alt="" />
+        </div>
+        <div class="povora__item3">
+          <img src="{% static 'cafe/img/povora-3.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="end-backround"></div>
+  </div>
+
+  <script src="{% static 'cafe/js/fontawesome-free-6.6.0-web/js/all.min.js' %}"></script>
+</body>
+
+</html>

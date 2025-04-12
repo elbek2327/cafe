@@ -1,0 +1,13 @@
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../font/OpenSans/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: Tinos-Bold;
+  src: url(../font/tinos/Tinos-Bold.ttf);
+}
+
+@font-face {
+  font-family: Tinos-Regular;
+  src: url(../font/tinos/Tinos-Regular.ttf);
+}
